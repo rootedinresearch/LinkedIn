@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Greg Hladik, Ph.D. — Executive Resume & Curriculum Vitae</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Controls Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">GH</div>
+        <div class="brand-title">Dr. Greg Hladik</div>
+      </div>
+      <div class="nav-actions">
+        <!-- View Mode Switcher: Executive Resume vs Full Academic CV -->
+        <select id="view-mode-selector" class="btn btn-primary" style="font-weight: 700;">
+          <option value="executive">⚡ Executive Resume (Concise Impact)</option>
+          <option value="academic">📜 Full Academic CV (All Pubs & Grants)</option>
+        </select>
+
+        <button id="toggle-franchise-btn" class="btn" title="Hide/Show Franchise Experience">
+          👁️ Hide Franchise Experience
+        </button>
+
+        <select id="theme-selector" class="btn" title="Change Theme">
+          <option value="light">☀️ Executive Light</option>
+          <option value="dark">🌙 Dark Slate Mode</option>
+        </select>
+
+        <button id="toggle-editor-btn" class="btn">
+          ✏️ Customizer
+        </button>
+
+        <button id="export-pdf-btn" class="btn">
+          📄 Export PDF
+        </button>
+
+        <button id="export-json-btn" class="btn" title="Export Resume JSON">
+          💾 Save JSON
+        </button>
+
+        <button id="import-json-btn" class="btn" title="Load JSON Data">
+          📂 Load JSON
+        </button>
+        <input type="file" id="json-file-input" accept=".json" style="display: none;">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Resume Content Area -->
+  <main class="resume-wrapper">
+    <article class="resume-card" id="resume-app">
+      <!-- Dynamic Content Rendered via JavaScript -->
+    </article>
+  </main>
+
+  <!-- Side Drawer Form & JSON Editor -->
+  <aside class="editor-drawer" id="editor-drawer">
+    <div class="drawer-header">
+      <h3>CV & Resume Customizer</h3>
+      <div style="display: flex; gap: 0.5rem;">
+        <button id="switch-tab-form" class="btn btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Form</button>
+        <button id="switch-tab-json" class="btn" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">JSON</button>
+        <button id="close-drawer-btn" class="btn" style="padding: 0.3rem 0.5rem;">✕</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Form Tab -->
+      <div id="tab-content-form">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="edit-name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Professional Title / Headline</label>
+            <input type="text" id="edit-label" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="edit-email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" id="edit-phone" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>LinkedIn URL</label>
+            <input type="text" id="edit-url" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Executive Summary</label>
+            <textarea id="edit-summary" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- JSON Tab -->
+      <div id="tab-content-json" style="display: none;">
+        <div class="form-group">
+          <label>Raw Resume JSON Schema</label>
+          <textarea id="edit-raw-json" class="form-control json-textarea"></textarea>
+        </div>
+        <button id="apply-json-btn" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          Apply Raw JSON Changes
+        </button>
+      </div>
+
+      <div style="margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+        <button id="reset-default-btn" class="btn" style="width: 100%; color: #DC2626; border-color: #FCA5A5;">
+          🔄 Reset to Default Dataset
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
