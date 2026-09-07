@@ -6,7 +6,7 @@
  *   2. Full Academic CV (Comprehensive 36 Pubs, Grants & Research Catalog)
  */
 
-const STORAGE_KEY = 'resume_workspace_data_v14';
+const STORAGE_KEY = 'resume_workspace_data_v19';
 const THEME_KEY = 'resume_workspace_theme';
 const HIDE_FRANCHISE_KEY = 'resume_workspace_hide_franchise';
 const VIEW_MODE_KEY = 'resume_workspace_view_mode';
@@ -92,9 +92,10 @@ const DEFAULT_RESUME_DATA = {
         "Acquired territorial rights and launched three indoor locations within 18 months, building full Aquatics, Deck, and Office management teams.",
         "Negotiated strategic facility partnerships with commercial fitness brands and landlords, cutting occupancy costs by 25%.",
         "Forged alliances with 6 ISDs, PTAs, and national water-safety non-profits (Step Into Swim), driving 40% of new customer leads.",
+        "Architected a custom self-service lead-to-booking sales engine that automates skill evaluation, CPQ pricing, and real-time sibling scheduling, eliminating front-desk phone tag and capturing enrollments 24/7.",
         "Implemented EOS-based MAPS framework, Google Apps Script lead tools, and AI marketing automations to double enrollments and lower customer acquisition cost (CAC) by 22%."
       ],
-      "technologies": ["Multi-Site Operations", "EOS / MAPS", "Google Apps Scripts", "Partnership Building", "P&L Strategy"]
+      "technologies": ["Multi-Site Operations", "Lead-to-Booking Sales Automation", "EOS / MAPS", "Google Apps Scripts", "P&L Strategy"]
     },
     {
       "id": "uta-exec-dir",
@@ -115,7 +116,7 @@ const DEFAULT_RESUME_DATA = {
         "Implemented nation's longest-running self-driving shuttle fleet (5.5 years, 0 reportable incidents) at a total net cost to the university of only $10,000.",
         "Pioneered Smart Parking Demand Management Zones, saving employees $100,000 annually and avoiding $690,000 in CapEx in year one.",
         "Orchestrated world's first installation of two Plastic Roads recycled-plastic parking lots, doubling asphalt lifespan and earning IPMI Apex Award for Innovation.",
-        "Upskilled internal staff in applied AI and mentored UTA Computer Science student teams to build custom in-house tools, micro-sites, and workflow automations."
+        "Mentored UTA Computer Science internship teams to engineer an AI-enabled predictive parking map (eliminating a $65,000/yr external SaaS contract) and a zero-ongoing-cost event logistics HTML builder (reducing administrative overhead by 95%)."
       ],
       "technologies": ["$13M Direct P&L / $5M Indirect", "Organizational Turnaround", "1-Click API Automations", "Multi-LLM Strategy", "Autonomous Shuttles", "Plastic Roads"]
     },
@@ -154,6 +155,36 @@ const DEFAULT_RESUME_DATA = {
   ],
   "projects": [
     {
+      "name": "Lead-to-Booking Automation & Self-Service Sales Engine",
+      "role": "Lead Architect & Business Operator",
+      "focus": "AI in Business / Revenue Operations / Process Automation",
+      "problemSolved": "Long phone consultations, confusing pricing tiers, and complicated multi-child scheduling were causing high lead drop-off and burdening front-desk staff.",
+      "solution": "Engineered a custom self-service sales workflow that guides parents through program evaluation, skill placement, custom pricing, and live ERP schedule matching.",
+      "description": "Architected an automated self-service sales and booking workflow that transitions customers from initial inquiry to confirmed enrollment without manual intake friction or front-desk intervention.",
+      "url": "https://britishswimschool-instantquote.vercel.app/hold",
+      "liveProofUrls": [
+        { "label": "Instant Quote & Schedule Hold", "url": "https://britishswimschool-instantquote.vercel.app/hold" },
+        { "label": "Interactive Parent Guide & Skill Placement", "url": "https://britishswimschool-instantquote.vercel.app/guide" },
+        { "label": "24/7 FAQ & AI Answer Engine", "url": "https://britishswimschool-instantquote.vercel.app/answers" }
+      ],
+      "highlights": [
+        "Created an instant Lead-to-Booking pipeline with zero manual intervention required.",
+        "Solved sibling scheduling constraints across 3 locations in real time.",
+        "Pre-fills enterprise ERP records to eliminate administrative data entry errors.",
+        "Captures and converts high-intent leads 24/7 outside regular business hours."
+      ],
+      "keywords": [
+        "AI in Business",
+        "Revenue Operations",
+        "Process Automation",
+        "Lead-to-Booking Pipeline",
+        "Constraint Scheduling",
+        "CPQ Tuition Engine",
+        "Jackrabbit ERP Integration"
+      ],
+      "featured": true
+    },
+    {
       "name": "Arlington RAPID Autonomous Transit Fleet (5.5-Year Pilot)",
       "description": "Nation's longest continuously running self-driving shuttle program integrated into public transit networks. Delivered over 5.5 years with zero reportable safety incidents at a total net cost to the university of only $10,000.",
       "url": "https://www.uta.edu",
@@ -176,14 +207,49 @@ const DEFAULT_RESUME_DATA = {
       "featured": true
     },
     {
-      "name": "In-House AI Parking Finder & Sensor Network",
-      "description": "Driven by 3 years of academic research partnerships with multiple vendors across a variety of SaaS products. Currently assembling and mentoring an internal team of UTA Computer Science students to rebuild the system completely in-house, replacing external vendor technology.",
+      "name": "AI-Enabled Predictive Parking Map & Live Availability Engine",
+      "role": "Executive Sponsor & CS Student Mentor",
+      "focus": "Applied AI / Predictive Analytics / Cost Elimination",
+      "problemSolved": "Recurring $65,000 annual commercial vendor SaaS expenditure for lot occupancy tracking and vendor lock-in.",
+      "solution": "Mentored a UTA Computer Science internship team to build an in-house predictive parking platform integrating live sensor APIs and predictive backup algorithms.",
+      "description": "Architected and mentored an in-house engineering initiative with UTA Computer Science student teams to build an AI-enabled predictive parking map, replacing commercial vendor software with a zero-cost proprietary platform.",
       "url": "https://www.uta.edu",
       "highlights": [
-        "Evaluated commercial IoT sensor networks and predictive AI algorithms over 3 years of vendor SaaS research partnerships",
-        "Currently assembling and mentoring an internal team of UTA Computer Science students to rebuild the system completely in-house, replacing vendor technology and cutting recurring costs"
+        "Created an AI-enabled predictive parking map with live API and predictive backup availability.",
+        "Replaced a $65,000 annual commercial vendor SaaS expenditure with a zero-cost proprietary platform ($325K 5-year savings).",
+        "Engineered predictive backup algorithms to direct campus commuters before lots hit full capacity.",
+        "Mentored undergraduate and graduate Computer Science engineering interns through full API lifecycle to production."
       ],
-      "keywords": ["Computer Science Mentorship", "In-House AI Platform", "Vendor Transition", "Predictive Analytics"],
+      "keywords": [
+        "Predictive AI Modeling",
+        "Live REST API Integration",
+        "Cost Elimination ($65K/yr)",
+        "Real-Time Sensor Analytics",
+        "Student Engineering Mentorship"
+      ],
+      "featured": true
+    },
+    {
+      "name": "Interactive Event Parking Logistics & Wayfinding HTML Builder",
+      "role": "Executive Sponsor & Product Architect",
+      "focus": "Workflow Automation / Event Logistics / Zero-Cost Web Tooling",
+      "problemSolved": "Event coordinators faced complex, manual planning workflows to assign parking locations, map walking distances, and communicate with campus event visitors.",
+      "solution": "Mentored a UTA Computer Science internship team to build a standalone, zero-ongoing-cost HTML builder tool that uses predictive technology to recommend arrival times, walking itineraries, and parking difficulty scores.",
+      "description": "Engineered a standalone HTML page builder for campus event coordinators with zero ongoing licensing or hosting costs, automating venue and parking lot selection with predictive arrival and transit modeling.",
+      "url": "https://www.uta.edu",
+      "highlights": [
+        "Created an interactive HTML page tool with zero ongoing software or hosting costs, enabling event coordinators to visually select parking locations and event sites.",
+        "Integrated predictive technology to calculate recommended arrival times, walking routes, and parking difficulty ratings.",
+        "Reduced administrative event coordination overhead by 95% while elevating campus service levels and visitor communication.",
+        "Delivered automated, polished digital wayfinding packages for major campus conferences and commencement events."
+      ],
+      "keywords": [
+        "Zero Ongoing Costs",
+        "Standalone HTML Page",
+        "95% Overhead Reduction",
+        "Event Logistics Optimization",
+        "Workflow Automation"
+      ],
       "featured": true
     },
     {
@@ -513,6 +579,75 @@ const DEFAULT_RESUME_DATA = {
         "Leidlein, E., & Hladik, G. (2012). Ten do’s and don’ts of outsourcing ResNet. Campus Technology."
       ]
     }
+  ],
+  "aiProof": [
+    {
+      "title": "Lead-to-Booking Automation & Self-Service Sales Engine",
+      "role": "Lead Architect & Business Operator",
+      "focus": "AI in Business / Revenue Operations / Process Automation",
+      "problemSolved": "Long phone consultations, confusing pricing tiers, and complicated multi-child scheduling were causing high lead drop-off and burdening front-desk staff.",
+      "solution": "Engineered a custom self-service sales workflow that guides parents through program evaluation, skill placement, custom pricing, and live ERP schedule matching.",
+      "businessImpact": [
+        "Created an instant Lead-to-Booking pipeline with zero manual intervention required.",
+        "Solved sibling scheduling constraints across 3 locations in real time.",
+        "Pre-fills enterprise ERP records to eliminate administrative data entry errors.",
+        "Captures and converts high-intent leads 24/7 outside regular business hours."
+      ],
+      "liveProofUrls": [
+        { "label": "Instant Quote & Schedule Hold", "url": "https://britishswimschool-instantquote.vercel.app/hold" },
+        { "label": "Interactive Parent Guide & Skill Placement", "url": "https://britishswimschool-instantquote.vercel.app/guide" },
+        { "label": "24/7 FAQ & AI Answer Engine", "url": "https://britishswimschool-instantquote.vercel.app/answers" }
+      ],
+      "technologies": [
+        "AI in Business",
+        "Revenue Operations",
+        "Process Automation",
+        "Constraint Scheduling",
+        "Dynamic CPQ",
+        "Jackrabbit Class ERP"
+      ]
+    },
+    {
+      "title": "AI-Enabled Predictive Parking Map & Live Availability Engine",
+      "role": "Executive Sponsor & CS Student Mentor",
+      "focus": "Applied AI / Predictive Analytics / Cost Elimination",
+      "problemSolved": "Recurring $65,000 annual commercial vendor SaaS licensing fee for parking lot occupancy tracking.",
+      "solution": "Mentored a UTA Computer Science internship team to engineer an in-house predictive parking map integrating live sensor APIs and predictive backup algorithms.",
+      "businessImpact": [
+        "Eliminated a $65,000 annual commercial vendor SaaS expenditure with a zero-cost in-house platform.",
+        "Engineered live API availability tracking with predictive backup algorithms for campus-wide navigation.",
+        "Redirected drivers proactively during peak congestion periods before lots hit maximum capacity.",
+        "Mentored student engineering interns from architectural design to live production deployment."
+      ],
+      "technologies": [
+        "Predictive AI Modeling",
+        "Live REST API Architecture",
+        "Cost Elimination ($65K/yr)",
+        "Real-Time Sensor Analytics",
+        "Student Engineering Mentorship"
+      ]
+    },
+    {
+      "title": "Interactive Event Parking Logistics & Wayfinding HTML Builder",
+      "role": "Executive Sponsor & Product Architect",
+      "focus": "Workflow Automation / Event Logistics / Zero-Cost Web Tooling",
+      "problemSolved": "Event coordinators faced time-consuming manual coordination to assign parking, estimate walking times, and direct thousands of visitors.",
+      "solution": "Mentored a UTA Computer Science internship team to develop an interactive HTML builder that predicts recommended arrival times, walking itineraries, and parking difficulty—running as a standalone HTML page with zero ongoing costs.",
+      "businessImpact": [
+        "Engineered as a lightweight, standalone HTML page with zero ongoing server, hosting, or software licensing costs.",
+        "Reduced administrative event coordination overhead by 95% while improving communication clarity.",
+        "Built interactive HTML visual builder for rapid lot and venue selection by campus coordinators.",
+        "Integrated predictive technology for recommended arrival windows and transit difficulty scores.",
+        "Elevated visitor service levels for major university ceremonies, athletics, and academic conferences."
+      ],
+      "technologies": [
+        "Zero Ongoing Costs",
+        "Standalone HTML Architecture",
+        "Workflow Automation",
+        "Event Logistics Optimization",
+        "Predictive Wayfinding"
+      ]
+    }
   ]
 };
 
@@ -648,6 +783,49 @@ function renderPipeKeywords(keywordsArr) {
   return `<div class="pipe-keywords-row">${keywordsArr.join(' <span class="pipe-sep">|</span> ')}</div>`;
 }
 
+// Render Project Card with Focus, Problem/Solution & Live Proof Links
+function renderProjectCard(proj) {
+  const proofLinksHtml = proj.liveProofUrls && proj.liveProofUrls.length > 0 ? `
+    <div class="project-proof-links">
+      <span class="proof-label">🔗 Live Proof:</span>
+      ${proj.liveProofUrls.map(l => `<a href="${l.url}" target="_blank" class="proof-link-pill" rel="noopener noreferrer">${l.label} ↗</a>`).join('')}
+    </div>
+  ` : (proj.url ? `
+    <div class="project-proof-links">
+      <a href="${proj.url}" target="_blank" class="proof-link-pill" rel="noopener noreferrer">Live Demo ↗</a>
+    </div>
+  ` : '');
+
+  const focusBadgeHtml = proj.focus ? `
+    <span class="project-focus-badge">${proj.focus}</span>
+  ` : '';
+
+  const problemSolutionHtml = (proj.problemSolved || proj.solution) ? `
+    <div class="project-problem-solution">
+      ${proj.problemSolved ? `<div class="project-ps-row"><strong>Problem Solved:</strong> ${proj.problemSolved}</div>` : ''}
+      ${proj.solution ? `<div class="project-ps-row"><strong>Solution:</strong> ${proj.solution}</div>` : ''}
+    </div>
+  ` : '';
+
+  return `
+    <div class="project-card">
+      <div>
+        <div class="project-header">
+          <h4 class="project-title">${proj.name}</h4>
+          ${focusBadgeHtml}
+        </div>
+        ${problemSolutionHtml}
+        <p class="project-desc">${proj.description || ''}</p>
+        <ul class="bullets-list" style="margin-bottom: 0.5rem;">
+          ${(proj.highlights || []).map(h => `<li>${h}</li>`).join('')}
+        </ul>
+        ${proofLinksHtml}
+      </div>
+      ${renderPipeKeywords(proj.keywords)}
+    </div>
+  `;
+}
+
 // Render Resume Presentation View
 function renderResume() {
   if (!resumeData) resumeData = DEFAULT_RESUME_DATA;
@@ -747,20 +925,7 @@ function renderExecutiveResume() {
 
   // Top 4 Flagship Initiatives
   const topProjects = (projects || []).slice(0, 4);
-  const projectsHtml = topProjects.map(proj => `
-    <div class="project-card">
-      <div>
-        <div class="project-header">
-          <h4 class="project-title">${proj.name}</h4>
-        </div>
-        <p class="project-desc">${proj.description}</p>
-        <ul class="bullets-list" style="margin-bottom: 0.5rem;">
-          ${(proj.highlights || []).map(h => `<li>${h}</li>`).join('')}
-        </ul>
-      </div>
-      ${renderPipeKeywords(proj.keywords)}
-    </div>
-  `).join('');
+  const projectsHtml = topProjects.map(renderProjectCard).join('');
 
   // Top Awards (Curated top 6 for executive resume)
   const topAwards = (awards || []).slice(0, 6);
@@ -971,20 +1136,7 @@ function renderFullAcademicCV() {
     </div>
   `).join('');
 
-  const projectsHtml = (projects || []).map(proj => `
-    <div class="project-card">
-      <div>
-        <div class="project-header">
-          <h4 class="project-title">${proj.name}</h4>
-        </div>
-        <p class="project-desc">${proj.description}</p>
-        <ul class="bullets-list" style="margin-bottom: 0.5rem;">
-          ${(proj.highlights || []).map(h => `<li>${h}</li>`).join('')}
-        </ul>
-      </div>
-      ${renderPipeKeywords(proj.keywords)}
-    </div>
-  `).join('');
+  const projectsHtml = (projects || []).map(renderProjectCard).join('');
 
   const partnershipsHtml = (researchPartnerships || []).map(rp => `
     <div class="partnership-card">
